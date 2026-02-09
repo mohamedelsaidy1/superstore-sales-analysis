@@ -1,7 +1,0 @@
--- Top 10 Customers by Total Sales
-SELECT TOP 10
-	Customer_Name,
-	SUM(Sales) AS TotalSales
-FROM SuperStore
-GROUP BY Customer_Name
-ORDER BY TotalSales DESC;

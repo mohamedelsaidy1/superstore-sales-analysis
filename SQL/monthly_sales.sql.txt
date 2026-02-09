@@ -1,7 +1,0 @@
---Monthly Sales Trend
-SELECT
-    DATETRUNC(MONTH, Order_Date) AS OrderMonth,
-    ROUND(SUM(Sales), 2) AS TotalSales
-FROM SuperStore
-GROUP BY DATETRUNC(MONTH, Order_Date)
-ORDER BY OrderMonth;
